@@ -1,0 +1,6 @@
+framework module Pods_Wunderlist_Clone {
+  umbrella header "Pods-Wunderlist Clone-umbrella.h"
+
+  export *
+  module * { export * }
+}
