@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F4914022180C1230061DC63 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4914012180C1230061DC63 /* LoadingButton.swift */; };
+		7F4914052180D2EA0061DC63 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4914042180D2EA0061DC63 /* User.swift */; };
 		7F73E8E1217F8582004BE279 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E8E0217F8582004BE279 /* LoginViewController.swift */; };
 		7F73E8E4217F85E2004BE279 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E8E3217F85E2004BE279 /* RegisterViewController.swift */; };
 		7F73E8E7217F8AF7004BE279 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E8E6217F8AF7004BE279 /* Constants.swift */; };
 		7F73E8EC217F8B99004BE279 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E8EB217F8B99004BE279 /* UIView.swift */; };
+		7F73E8EE217FA0C7004BE279 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E8ED217FA0C7004BE279 /* UIColor.swift */; };
+		7F73E8F0217FA381004BE279 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F73E8EF217FA381004BE279 /* TextField.swift */; };
 		7FA0E656217E1CE80046476F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA0E655217E1CE80046476F /* AppDelegate.swift */; };
 		7FA0E65B217E1CE80046476F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0E659217E1CE80046476F /* Main.storyboard */; };
 		7FA0E65D217E1CE90046476F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA0E65C217E1CE90046476F /* Assets.xcassets */; };
@@ -20,10 +24,14 @@
 
 /* Begin PBXFileReference section */
 		57B00B6C0DDF71D6F71AF5F0 /* Pods_Wunderlist_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wunderlist_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4914012180C1230061DC63 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		7F4914042180D2EA0061DC63 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7F73E8E0217F8582004BE279 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7F73E8E3217F85E2004BE279 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7F73E8E6217F8AF7004BE279 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7F73E8EB217F8B99004BE279 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		7F73E8ED217FA0C7004BE279 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		7F73E8EF217FA381004BE279 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		7FA0E652217E1CE80046476F /* Wunderlist Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wunderlist Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA0E655217E1CE80046476F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA0E65A217E1CE80046476F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,9 +63,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7F4914002180C1060061DC63 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7F4914032180D2E00061DC63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F4914042180D2EA0061DC63 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7F73E8DE217F855A004BE279 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7F4914002180C1060061DC63 /* New Group */,
 				7F73E8E2217F85D8004BE279 /* Register */,
 				7F73E8DF217F8567004BE279 /* Login */,
 			);
@@ -85,6 +109,7 @@
 			children = (
 				7F73E8EA217F8B83004BE279 /* Extensions */,
 				7F73E8E6217F8AF7004BE279 /* Constants.swift */,
+				7F4914012180C1230061DC63 /* LoadingButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -93,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				7F73E8EB217F8B99004BE279 /* UIView.swift */,
+				7F73E8ED217FA0C7004BE279 /* UIColor.swift */,
+				7F73E8EF217FA381004BE279 /* TextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -118,6 +145,7 @@
 		7FA0E654217E1CE80046476F /* Wunderlist Clone */ = {
 			isa = PBXGroup;
 			children = (
+				7F4914032180D2E00061DC63 /* Models */,
 				7F73E8E5217F8AEA004BE279 /* Utils */,
 				7F73E8DE217F855A004BE279 /* Controllers */,
 				7FA0E655217E1CE80046476F /* AppDelegate.swift */,
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4914022180C1230061DC63 /* LoadingButton.swift in Sources */,
 				7F73E8EC217F8B99004BE279 /* UIView.swift in Sources */,
+				7F73E8EE217FA0C7004BE279 /* UIColor.swift in Sources */,
 				7F73E8E4217F85E2004BE279 /* RegisterViewController.swift in Sources */,
+				7F73E8F0217FA381004BE279 /* TextField.swift in Sources */,
+				7F4914052180D2EA0061DC63 /* User.swift in Sources */,
 				7F73E8E1217F8582004BE279 /* LoginViewController.swift in Sources */,
 				7FA0E656217E1CE80046476F /* AppDelegate.swift in Sources */,
 				7F73E8E7217F8AF7004BE279 /* Constants.swift in Sources */,

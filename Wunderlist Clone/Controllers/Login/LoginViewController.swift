@@ -18,13 +18,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        buttonRegister.layer.borderColor = UIColor.black.cgColor;
-//        buttonRegister.layer.borderWidth = 1;
-//        buttonRegister.layer.cornerRadius = 5
         buttonRegister.roundedView(boderColor: UIColor.gray.cgColor, borderWidth: 1, cornerRadius: 5)
         buttonLogin.roundedView(boderColor: UIColor.black.cgColor, borderWidth: 0, cornerRadius: 5)
         viewContainer.roundedView(boderColor: UIColor.black.cgColor, borderWidth: 0, cornerRadius: 5)
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = true
     }
     
 
