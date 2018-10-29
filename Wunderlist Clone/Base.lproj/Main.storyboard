@@ -60,7 +60,7 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <state key="normal" title="Crear cuenta gratuita">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="onLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKQ-fF-k7v"/>
@@ -158,22 +158,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTN-6H-SfF">
-                                <rect key="frame" x="16" y="36" width="343" height="300"/>
+                                <rect key="frame" x="16" y="36" width="343" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crear cuenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBr-i6-4ci">
-                                        <rect key="frame" x="16" y="8" width="311" height="20.5"/>
+                                        <rect key="frame" x="16" y="102" width="311" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Si creas una cuenta, se sincronizarán tus y podrás compartirlas con tus amigos desde todos tus dispositivos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFz-L7-ZEe">
-                                        <rect key="frame" x="16" y="36.5" width="311" height="43"/>
+                                        <rect key="frame" x="16" y="130.5" width="311" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE9-ln-lyz" customClass="LoadingButton" customModule="Wunderlist_Clone" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="244" width="311" height="40"/>
+                                        <rect key="frame" x="16" y="344" width="311" height="40"/>
                                         <color key="backgroundColor" red="0.25882352939999997" green="0.52156862749999999" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="LgC-LU-Hst"/>
@@ -186,8 +186,21 @@
                                             <action selector="onRegisterPressed:" destination="JGW-Fr-4Ey" eventType="touchUpInside" id="NXW-wA-NMo"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTv-Df-DnB">
+                                        <rect key="frame" x="136.5" y="16" width="70" height="70"/>
+                                        <color key="backgroundColor" red="0.86346905048076916" green="0.86346905048076916" blue="0.86346905048076916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Wgg-vi-Bh3"/>
+                                            <constraint firstAttribute="width" constant="70" id="gv9-Z4-DWI"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" image="photo-camera"/>
+                                        <connections>
+                                            <action selector="onAvatarPressed:" destination="JGW-Fr-4Ey" eventType="touchUpInside" id="SDK-Ai-3iJ"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mq-IT-1J8">
-                                        <rect key="frame" x="16" y="90" width="311" height="120"/>
+                                        <rect key="frame" x="16" y="189.5" width="311" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sxW-9s-RwP">
                                                 <rect key="frame" x="0.0" y="0.0" width="311" height="120"/>
@@ -234,19 +247,21 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.84947253180000004" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="QBr-i6-4ci" firstAttribute="top" secondItem="DTN-6H-SfF" secondAttribute="top" constant="8" id="0n5-IS-jGN"/>
+                                    <constraint firstItem="BTv-Df-DnB" firstAttribute="centerX" secondItem="DTN-6H-SfF" secondAttribute="centerX" id="0ui-eh-w3q"/>
                                     <constraint firstItem="yE9-ln-lyz" firstAttribute="leading" secondItem="DTN-6H-SfF" secondAttribute="leading" constant="16" id="5yu-oN-dcJ"/>
-                                    <constraint firstItem="9mq-IT-1J8" firstAttribute="centerY" secondItem="DTN-6H-SfF" secondAttribute="centerY" id="Bid-0X-mFO"/>
+                                    <constraint firstItem="BTv-Df-DnB" firstAttribute="top" secondItem="DTN-6H-SfF" secondAttribute="top" constant="16" id="Bvq-qb-xjl"/>
                                     <constraint firstAttribute="bottom" secondItem="yE9-ln-lyz" secondAttribute="bottom" constant="16" id="CWr-8Z-6rv"/>
                                     <constraint firstItem="JFz-L7-ZEe" firstAttribute="leading" secondItem="DTN-6H-SfF" secondAttribute="leading" constant="16" id="FKG-7i-bC5"/>
                                     <constraint firstAttribute="trailing" secondItem="QBr-i6-4ci" secondAttribute="trailing" constant="16" id="QDT-IS-Jwa"/>
                                     <constraint firstAttribute="trailing" secondItem="yE9-ln-lyz" secondAttribute="trailing" constant="16" id="U7W-R5-qbG"/>
+                                    <constraint firstItem="QBr-i6-4ci" firstAttribute="top" secondItem="BTv-Df-DnB" secondAttribute="bottom" constant="16" id="ag4-my-Tti"/>
                                     <constraint firstItem="JFz-L7-ZEe" firstAttribute="top" secondItem="QBr-i6-4ci" secondAttribute="bottom" constant="8" id="bGw-GJ-tdO"/>
                                     <constraint firstItem="9mq-IT-1J8" firstAttribute="leading" secondItem="DTN-6H-SfF" secondAttribute="leading" constant="16" id="c6s-Gg-Ccl"/>
                                     <constraint firstAttribute="trailing" secondItem="9mq-IT-1J8" secondAttribute="trailing" constant="16" id="eFE-XW-Bzi"/>
                                     <constraint firstItem="9mq-IT-1J8" firstAttribute="centerX" secondItem="DTN-6H-SfF" secondAttribute="centerX" id="gdd-gV-OxL"/>
                                     <constraint firstItem="QBr-i6-4ci" firstAttribute="leading" secondItem="DTN-6H-SfF" secondAttribute="leading" constant="16" id="gtS-XF-5uU"/>
-                                    <constraint firstAttribute="height" constant="300" id="u2T-lF-mlD"/>
+                                    <constraint firstItem="9mq-IT-1J8" firstAttribute="top" secondItem="JFz-L7-ZEe" secondAttribute="bottom" constant="16" id="tcj-km-dxC"/>
+                                    <constraint firstAttribute="height" constant="400" id="u2T-lF-mlD"/>
                                     <constraint firstAttribute="trailing" secondItem="JFz-L7-ZEe" secondAttribute="trailing" constant="16" id="xN7-Mp-jMX"/>
                                 </constraints>
                             </view>
@@ -264,6 +279,7 @@
                         <viewLayoutGuide key="safeArea" id="EZC-dp-tVo"/>
                     </view>
                     <connections>
+                        <outlet property="buttonAvatar" destination="BTv-Df-DnB" id="Leb-Wn-X36"/>
                         <outlet property="buttonRegister" destination="yE9-ln-lyz" id="LIL-h3-zB1"/>
                         <outlet property="textFieldEmail" destination="ZC5-9h-21R" id="Cn0-1i-xeF"/>
                         <outlet property="textFieldName" destination="IBR-Kf-VRY" id="ij8-Yp-RES"/>
@@ -297,5 +313,6 @@
     </scenes>
     <resources>
         <image name="berlin-city-view-from-top-pic-2560x1440" width="2560" height="1440"/>
+        <image name="photo-camera" width="256" height="256"/>
     </resources>
 </document>
