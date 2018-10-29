@@ -11,7 +11,7 @@ import UIKit
 
 struct Constants {
     
-    static let host = "localhost:4000"
+    static let host = "192.168.15.15:4000"
     static let base_url = "http://\(Constants.host)/api/v1"
     
 }
